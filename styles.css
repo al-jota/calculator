@@ -1,0 +1,172 @@
+.calculator {
+  width: 250px;
+  margin: 50px auto;
+  border: 4px solid darkgreen;
+  text-align: center;
+  background-image: url("images/gradient-poker-table-background_23-2151085419.avif");
+  
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Monoton, sans-serif;
+  
+
+  position: relative;
+  isolation: isolate;
+}
+
+.calculator ::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: beige;
+  border-radius: 10px;
+  opacity: .03;
+}
+
+#display  {
+  width: 220px;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 15px;
+  margin: 5px auto;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  background: rgb(200, 219, 197);
+  
+}
+
+#equations {
+  border: 2px solid darkgreen;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgb(200, 219, 197);
+  width: 137px;
+  height: 20px;
+  padding: 10px;
+  margin: 5px auto;
+  margin-right: 7px; 
+  color: black;
+  
+}
+
+h4{
+  color: rgb(255, 183, 0);
+  margin-right: 0px;
+  text-shadow: 
+    4px 4px 1px darkgreen,
+    -1px -1px 0 darkred,
+    1px -1px 0 darkred,
+    -2px 1px 0 darkgreen,
+    1px 1px  darkgreen;
+  font-size: 35px;
+  font-weight: lighter;
+  text-align: center;
+  margin: -3px;
+  
+}
+
+.two-lines {
+  display: block;
+}
+
+.buttons button {
+  border: 2px solid darkred;
+  border-radius: 7px;
+  width: 45px;
+  height: 45px;
+  margin: 5.5px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(222, 175, 173);
+  color: black;
+}
+
+.clear {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+#clear {
+  border: darkgreen;
+  background: darkgreen;
+  color: white;
+  font-weight: bold;
+  
+}
+
+#operator {
+  background-color: darkgreen;
+  color: white;
+  font-weight: bold;
+  border: darkgreen;
+}
+
+.buttons button:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.2rem);
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  box-shadow: 3px 4px 5px rgb(255, 183, 0);
+}
+
+.random button:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.2rem);
+  cursor: pointer;
+  box-shadow: 3px 4px 5px rgb(255, 183, 0);
+}
+
+
+#dice {
+  border: 2px solid rgb(255, 183, 0);
+  background: darkgreen;
+  color: white;
+  width: 90%;
+  height: 45px;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 10px auto; 
+  font-family: Monoton, sans-serif;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.diceButton {
+  font-size: 600px;
+}
+
+.countdown {
+  font-size: 600px;
+}
+
+.correct-border {
+  border: 2.5px solid rgb(255, 183, 0) !important;
+  outline: 4px dashed green;
+  outline-offset: 2px;
+}
+
+.incorrect-border {
+  border: 2.5px solid rgb(255, 183, 0) !important;
+  outline: 4px dashed red;
+  outline-offset: 2px;
+}
+
+.equation-border {
+  border: 2px solid darkgreen;
+  border-radius: 7px;
+  outline: 2px solid rgb(255, 183, 0);
+  outline-offset: 1px;
+}
